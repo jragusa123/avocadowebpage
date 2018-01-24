@@ -15,7 +15,7 @@ li {
   visibility: visible;
 }
 
-body  {
+body{
   margin:50px 0px; padding:0px;
 
    align:center;
@@ -27,12 +27,13 @@ h1{ display: right;
 text-align: right;
 
 }
+
 h2  h3  { background color: #f8f2d2;
   font-color: lightgreen;
   text align: right;
   display: right;
   float: right;
-  border: 1px solid green
+  border: 1px solid green;
 float: right;
 }
  #footer{ background-color: #89b993;
@@ -79,3 +80,36 @@ align: center;
 font-family: 'Poiret One', cursive;
 font-size: 35px;
 }
+/* media will make all of the text and buttons center when scrren size reduced */
+
+@media all and (max-width: 1000px) and (min-width: 700px) {display: block;
+text-align: center;}
+@media only screen and (max-width: 480px) {
+        div#footer {
+            width: 400px;
+            display: inline-block;
+            text-align: center;
+        }
+
+        div#header {
+
+            height: 93px;
+            position: relative;
+            overflow: hidden;
+
+        }
+
+        div#right h1 h2{
+            font-size: 140%;
+        }
+
+        #image{
+            float: none;
+            width: 100%;
+        }
+
+      nav {
+            float:none;
+            width: auto;
+        }
+    }
